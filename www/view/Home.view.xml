@@ -1,0 +1,12 @@
+<mvc:View xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" controllerName="sapui5.poc.controller.Home">
+	<Page title="{i18n>overViewPage}" showHeader="false" class="pageBackground">
+		<VBox height="100%" width="75%" justifyContent="Center" alignItems="Center">
+			<VBox>
+				<Label design="Bold" text="{i18n>homePageTitle}" class="textSizeFont"/>
+				<Label text="{i18n>homePageSubtitle}" class="textSizeFont-2 sapUiLargeMarginEnd "/>
+				<Button text="{i18n>homePageBtnTxt}" class="sapUiLargeMarginBottom" icon="sap-icon://arrow-right" press="onPressDemo"/>
+				<Label text="{i18n>homePageText}" class="textSizeFont-3"/>
+			</VBox>
+		</VBox>
+	</Page>
+</mvc:View>

@@ -1,0 +1,22 @@
+<core:FragmentDefinition xmlns:core="sap.ui.core" xmlns="sap.m">
+	<Dialog title="{i18n>edit}">
+		<HBox>
+			<VBox class="sapUiContentPadding">
+				<Label text="{i18n>username}"/>
+				<Input value="{editEntry>/username}"/>
+			</VBox>
+			<VBox class="sapUiContentPadding">
+				<Label text="{i18n>password}"/>
+				<Input value="{editEntry>/password}"/>
+			</VBox>
+			<VBox class="sapUiContentPadding">
+				<Label text="{i18n>accountType}"/>
+				<Input value="{editEntry>/accountType}"/>
+			</VBox>
+		</HBox>
+		<buttons>
+			<Button text="{i18n>edit}" press="onEdit"/>
+			<Button text="{i18n>close}" press="onCloseEdit"/>
+		</buttons>
+	</Dialog>
+</core:FragmentDefinition>

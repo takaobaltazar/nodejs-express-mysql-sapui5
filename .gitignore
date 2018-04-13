@@ -1,0 +1,18 @@
+# Add any directories, files, or patterns you don't want to be tracked by version control
+/platforms
+/plugins
+/www/resources
+/www/Component-preload.js
+/www/Component-preload.js.bak
+sap-ui-cachebuster-info.json
+extended_runnable_file.html
+.*/extended_runnable_file.html
+UIAdaptation_index.html
+changes_preview.js
+visual_ext_index.html
+/webapp/visual_ext_index.html
+fioriHtmlRunner.html
+.*/fioriHtmlRunner.html
+mock_preview_sapui5.html
+.*/mock_preview_sapui5.html
+/node_modules

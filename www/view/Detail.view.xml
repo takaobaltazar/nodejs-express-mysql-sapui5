@@ -1,0 +1,45 @@
+<mvc:View xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" controllerName="sapui5.poc.controller.Detail" xmlns:core="sap.ui.core">
+	<Page title="Detail Page" showNavButton="true" navButtonPress="onNavBack">
+		<Table items="{nodeData>/}" class="sapUiContentPadding" id="idTable">
+			<headerToolbar>
+				<Toolbar>
+					<core:Icon src="sap-icon://add" size="1.5rem" press="onOpenDialogCreate"/>
+					<ToolbarSpacer/>
+					<SearchField width="50%" class="sapUiNoContentPadding" liveChange="onLiveSearch"/>
+				</Toolbar>
+			</headerToolbar>
+			<columns>
+				<Column>
+					<Text text="{i18n>id}"/>
+				</Column>
+				<Column>
+					<Text text="{i18n>username}"/>
+				</Column>
+				<Column>
+					<Text text="{i18n>password}"/>
+				</Column>
+				<Column>
+					<Text text="{i18n>accountType}"/>
+				</Column>
+				<Column width="3rem">
+					<Text text="{i18n>edit}"/>
+				</Column>
+				<Column width="3rem">
+					<Text text="{i18n>delete}"/>
+				</Column>
+			</columns>
+			<items>
+				<ColumnListItem>
+					<cells>
+						<Text text="{nodeData>id}"/>
+						<Text text="{nodeData>username}"/>
+						<Text text="{nodeData>password}"/>
+						<Text text="{nodeData>account_type}"/>
+						<core:Icon src="sap-icon://edit" color="green" press="onOpenDialogEdit"/>
+						<core:Icon src="sap-icon://delete" color="red" press="onOpenDialogDelete"/>
+					</cells>
+				</ColumnListItem>
+			</items>
+		</Table>
+	</Page>
+</mvc:View>

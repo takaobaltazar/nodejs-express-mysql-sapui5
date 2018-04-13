@@ -1,0 +1,11 @@
+<core:FragmentDefinition xmlns:core="sap.ui.core" xmlns="sap.m">
+	<Dialog title="{i18n>deleteEntry}">
+		<HBox alignItems="Center" justifyContent="Center" height="100%">
+			<Text text="{i18n>deleteEntryMsg}" class="sapUiTinyMarginTop"/>
+		</HBox>
+		<buttons>
+			<Button text="{i18n>delete}" press="onDelete"/>
+			<Button text="{i18n>close}" press="onCloseDelete"/>
+		</buttons>
+	</Dialog>
+</core:FragmentDefinition>

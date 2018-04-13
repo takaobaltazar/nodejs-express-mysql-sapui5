@@ -1,0 +1,16 @@
+.pageBackground {
+	background-image: url('../img/photo2.jpeg');
+	background-size:cover
+}
+.textSizeFont.sapMLabel {
+	color: #434245;
+    font-size: 10rem;
+}
+.textSizeFont-2.sapMLabel {
+	color: #434245;
+    font-size: 2.5rem;
+}
+.textSizeFont-3.sapMLabel {
+	color: #434245;
+    font-size: 1.2rem;
+}
